@@ -1,3 +1,16 @@
+.github-link {
+    color:black;
+    text-decoration:none;
+    position:fixed;
+    top:5em;
+    left:1em;
+    background:#444488;
+    padding:1em;
+    color:white;
+}
+.github-link:hover {
+    background:#222244;
+}
 body {
     font-family: 'Open Sans', sans-serif;
 }
