@@ -1,0 +1,248 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.page {
+    width:1000px;
+    /*background:red;*/
+    margin:0 auto;
+}
+.header {
+    margin: 3em 9% 0 9%;
+    position:relative;
+    /*background:red;*/
+}
+.header div {
+    float:left;
+    /*outline:1px solid black;*/
+}
+/*
+Dear code readers:
+
+Yes, I know. I'm not using flex box. Or semantic tags. It would make my life 100 times easier.
+But some potential employers are still using IE. And that has no flex support.
+
+
+So here we are. Floats it is.
+*/
+.header-logo {
+    padding:0;
+    margin:0;
+}
+.header-logo svg {
+    height:100%;
+    padding:0;
+    margin:0;
+}
+.clearfix:after {
+     content: "";
+    display: table;
+    clear: both;
+}
+.header-name {
+    padding-left:2.4em;
+}
+.header-name h1 {
+    margin:0;
+    padding:0;
+}
+.header-name h1 {
+    font-size:43pt;
+    font-weight:400;
+}
+.header-name h2 {
+    font-size:19pt;
+    padding:0;
+    margin:0;
+    position:absolute;
+    font-weight:300;
+    bottom:10px;
+
+}
+img {
+    width:100px;
+}
+.contact-container {
+    position:absolute;
+    right:0;
+    height:100%:;
+}
+.header-contact {
+    text-align:right;
+    position:relative;
+    height:100%;
+}
+.header-contact a {
+    color:black;
+    text-decoration:none;
+    transition:color 0.2s, background 0.2s;
+}
+.header-contact a:hover {
+    background:black;
+    color:white;
+}
+.header-contact ul {
+    list-style:none;
+    line-height:1.5em;
+    font-size:12pt;
+    margin-bottom:0;
+    position:relative;
+    bottom:-12px;
+}
+.header {
+    padding-bottom:10px;
+    border-bottom:2px solid black;
+}
+.pdf-link {
+    position:fixed;
+    top:1.5em;
+    right:1.5em;
+    text-decoration:none;
+    color:black;
+    padding:0.5em;
+    color:black;
+    background:white;
+    border:2px solid black;
+    border-radius:8px;
+    transition: background 0.2s, color 0.2s;
+}
+.pdf-link:hover {
+    background:black;
+    color:white;
+}
+.homepage-link {
+    background:black;
+    color:white;
+    position:fixed;
+    top:-1em;
+    left:2em;
+    padding:1em 0.5em;
+    font-size:14pt;
+    text-decoration:none;
+    transition:top 0.2s;
+}
+.homepage-link:hover {
+    top:0;
+}
+
+.article {
+    margin: 0 9% 3em 9%;
+}
+.column-left, .column-right {
+    float:left;
+}
+.column-left h2 {
+    font-weight:300;
+    line-height:1.5em;
+}
+p {
+    /*background:red;*/
+    line-height:1.5em;
+}
+.column-left {
+    width:20%;
+}
+.column-right {
+    width:80%;
+}
+.section {
+    border-bottom:1px dotted #444;
+}
+.section:last-child {
+    border:none;
+}
+.section-label {
+    position:relative;
+    margin-top:1em;
+
+}
+.section-label h2, .section-label h1 {
+    margin-bottom:0;
+    margin-top:0;
+    display:inline-block;
+    padding:0;
+}
+.section-label h1 {
+    font-weight:400;
+    font-size:24pt;
+}
+.section-label h2 {
+    font-size:15pt;
+}
+.section-label .date {
+    margin:0;
+    text-align:right;
+    display:block;
+    position:absolute;
+    top:0;
+    right:0;
+    line-height:100%;
+    font-size:11pt;
+}
+.date span {
+    line-height:100%;
+}
+.section-label .subtitle {
+    font-weight:300;
+    font-size:13pt;
+    margin-left:0.5em;
+}
+.column-right > h3 {
+    margin:0;
+    margin-top:0.5em;
+    padding:0;
+}
+.section table {
+    margin-top:0.5em;
+    margin-bottom:1em;
+    width:100%;
+    margin-left:1.5em;
+}
+.section td:before {
+    content:'  -  ';
+    margin-left:0.2em;
+    font-weight:400;
+}
+.section td {
+    text-indent: -1.5em 
+}
+.tab-2col td {
+    width:50%;
+}
+.tab-3col td {
+    width:33.333333%;
+}
+.tab-3col td:last-child {
+    width:33.333334%;
+}
+.section p {
+    margin-top:0.5em;
+}
+.section p:first-child {
+    margin-top:1em;
+}
+.layer2 td:before {
+    content:'    -  ';
+    margin-left:3em;
+}
+.section a {
+    color:#64B3DF;
+    text-decoration:none;
+    font-weight:600;
+    transition:color 0.2s, background 0.2s;
+}
+.section a:hover {
+    color:white;
+    background:#64B3DF;;
+}
+.column-right .project-link {
+    font-weight:300;
+    color:black;
+    font-size:12pt;
+}
+.column-right .project-link:hover {
+    background:black;
+    color:white;
+}
+.column-right p + table {
+    margin-top:-1em;
+}
